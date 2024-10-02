@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --preto: #000000;
     --branco: #fff;
     --amarelo: #E1A325;
+    --cinza-escuro: #1C1C1C;
+    --cinza-claro: #D3D3D3
 }
 
 * {
@@ -41,6 +46,96 @@ a {
     padding-block: 16px;
 }
 
+.hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./bg.jpg");
+    background-color: var(--amarelo);
+  }
+
+#sobre-nos h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10px;
+}
+
+.principal {
+    display: flex;
+    /* align-items: center; */
+    padding: 18px;
+}
+
+.principal p {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 1.3;
+  padding-right: 100px;
+  word-break: keep-all;
+  
+}
+
+.entre-contato {
+    padding-top: 70px;
+}
+
+.link-contato {
+    font-size: 20px;
+    padding: 12px 12px;
+    border: var(--preto) 2px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    min-width: 200px;
+    max-width: 200px;
+    background-color: var(--preto);
+}
+
+.link-contato:hover {
+    background-color: var(--cinza-escuro);
+    border: var(--cinza-escuro) 2px solid;
+    color: var(--cinza-claro);
+}
+
+.redes-sociais {
+    margin-top: 60px;
+    display: flex;
+    gap: 32px;
+}
+
+.link-redes-sociais {
+    font-size: 20px;
+    padding: 16px 16px;
+    border: var(--preto) 2px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--preto);
+    font-size: 25px;
+}
+
+.link-redes-sociais:hover {
+    background-color: var(--preto);
+    color: var(--amarelo);
+}
+
+
+.img-filtros {
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 18px; */
+
+}
 
 .hamburger {
     display: none;
